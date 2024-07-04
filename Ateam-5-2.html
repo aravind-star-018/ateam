@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Team</title>
+    <link rel="icon" type="icon" href="../A-Team/ATEAM-BLACK.jpeg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        #heading:hover {
+            color: azure;
+
+        }
+
+
+        body::-webkit-scrollbar {
+            display: none;
+
+        }
+    </style>
+</head>
+
+
+
+<body style="background-image: url(./assets/img/yellow-2.jpg);background-size: contain;">
+    <!--------------------------------------------------------------------top-nav------------------------------------------------------------------------------------------------------------>
+    <header>
+        <div class="row-sm-1 ">
+
+            <div class="container-fluid d-flex border border-dark p-2 " style="background-color: #fffb01;">
+                <nav class="navbar navbar-expand-sm ">
+
+                    <ul class="navbar-nav">
+
+                        <li class="nav-item">
+
+
+                            <img src="./assets/img/ateam.jpeg" class=" rounded ms-2 me-5   " alt=""
+                                style="height: 60px; width:60px; border: 1px solid black;">
+
+
+                        </li>
+
+                        <li class="nav-item ms-5">
+
+
+                            <h1 class="text-dark mt-1" style="font-family:Verdana, Geneva, Tahoma, sans-serif; ">
+                                <b id="heading" class="px-5 mx-5 ">ATEAM&nbsp;SOFT&nbsp;SOLUTIONS&nbsp;INTERNSHIP
+                                </b>
+                            </h1>
+
+
+                        </li>
+
+
+                        <li class="nav-item ">
+
+                            <div class="input-group mt-2 ms-1">
+                                <input type="text" class="form-control custom-input ms-5" style="border-radius: 50px;"
+                                    placeholder="search...">
+                                <button class="btn custom-btn rounded-circle bg-warning" type="submit">
+                                    <i class="fa-solid fa-magnifying-glass" style="color: #030303;"></i>
+                                </button>
+                            </div>
+
+
+                        </li>
+
+                    </ul>
+
+
+                </nav>
+
+            </div>
+
+
+        </div>
+    </header>
+    <!---------------------------------------------------------------------left-column----------------------------------------------------------------------------------------------->
+
+    <div class="row d-flex">
+        <div class="col-sm-2 ">
+            <div class="container-fluid  ">
+                <nav class="navbar navbar-expand-sm ">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapsibleNavbar"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                        <ul class="navbar-nav flex-column">
+                            <li class="nav-item py-2" style="background-color: #eaea1e;width: 246px;">
+                                <a class="text-dark" style="text-decoration: none;" href="./index.html">
+                                    <h4>HOME</h4>
+                                </a>
+                            </li>
+                            <li class="nav-item py-2" style="background-color:#eaea1e;width: 246px;">
+                                <a class="text-dark" style="text-decoration: none;" href="./ateam-4.html">
+                                    <h4>ABOUT</h4>
+                                </a>
+                            </li>
+                            <li class="nav-item py-2" style="background-color:#eaea1e;width: 246px;">
+                                <a class="text-dark" style="text-decoration: none;" href="./a-team-2.html">
+                                    <h4>INTERNSHIP</h4>
+                                </a>
+                            </li>
+                            <li class="nav-item py-2" style="background-color: #eaea1e;width: 246px;">
+                                <a class="text-dark" style="text-decoration: none;" href="./A-TEAM-3.HTML">
+                                    <h4>COURSES</h4>
+                                </a>
+                            </li>
+                            <li class="nav-item py-2" style="background-color: #ffff00;width: 246px;">
+                                <a class="text-dark" style="text-decoration: none;" href="#">
+                                    <h4>CONTACT US</h4>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+
+        <!-----------------------------------------------------------------------mid-column----------------------------------------------------------------------------------->
+        <div class="col-sm-10 ">
+
+            <div class="container border border-dark " style="overflow-y: scroll;">
+                <div class="row py-2 ;" style="text-align: center;">
+
+                    <h4 class="display-4">Book Your Demo Class Now!</h4>
+
+                </div>
+                <form class="was-validated">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <label for="firstname">
+                                <p style="font-weight: 500;">First Name:</p>
+                                </First>
+                            </label>
+                            <input type="text" id="firstname" name="firstname" class="form-control "
+                                placeholder="first name" required>
+                        </div>
+                        <div class="col-sm-6">
+                            <label for="secondname">
+                                <p style="font-weight: 500;">Second Name:</p>
+                            </label>
+                            <input type="text" id="secondname" name="secondname:" class="form-control"
+                                placeholder="second name" required>
+                        </div>
+                    </div>
+                    <div class="mt-3">
+                        <label for="email"><span style="font-weight: 500;">E-mail:</span></label>
+                        <input class="form-control" type="email" id="email" name="email" placeholder="abc123@gmail.com"
+                            required>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 mt-3">
+                            <label for="phone"><span style="font-weight: 500;">Phone number:</span></label>
+                            <input class="form-control" type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="col-sm-6 mt-3">
+                            <label for="dob"><span style="font-weight: 500;">Date of birth:</span></label>
+                            <input class="form-control" type="date" id="dob" name="dob" required>
+                        </div>
+
+                    </div>
+                    <div class="row mt-3">
+                        <!--gender-->
+                        <div class="col-sm-6 ">
+                            <span style="font-weight: 500;">Gender:</span>
+                            <div class="form-check">
+                                <label for="gender"><span style="font-weight: 500;">Male</span></label>
+                                <input type="radio" id="gender1" name="gender" class="form-check-input" value="male">
+                            </div>
+                            <div class="form-check">
+                                <label for="gender"><span style="font-weight: 500;">Female</span></label>
+                                <input type="radio" id="gender2" name="gender" class="form-check-input" value="female">
+                            </div>
+                            <div class="form-check">
+                                <label for="gender"><span style="font-weight: 500;">Others</span></label>
+                                <input type="radio" id="gender3" name="gender" class="form-check-input" value="others">
+                            </div>
+                        </div>
+                        <!--language-->
+                        <div class="col-sm-6 ">
+                            <span style="font-weight: 500;">Languages:</span>
+                            <div class="form-check">
+                                <label for="check1"><span style="font-weight: 500;">English</span></label>
+                                <input type="checkbox" id="check1" name="check" class="form-check-input" value="1">
+                            </div>
+                            <div class="form-check">
+                                <label for="gender"><span style="font-weight: 500;">Tamil</span></label>
+                                <input type="checkbox" id="check2" name="check" class="form-check-input" value="2">
+                            </div>
+                            <div class="form-check">
+                                <label for="gender"><span style="font-weight: 500;">Malayalam</span></label>
+                                <input type="checkbox" id="check3" name="gender" class="form-check-input" value="3">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row d-flex mt-2">
+                        <div class="col-sm-6">
+                            <label for="college"><span style="font-weight: 500;">College:</span> </label>
+                            <input class="form-control" list="college" required>
+                            <datalist id="college">
+                                <option>abc</option>
+                                <option>nbk</option>
+                                <option>abcd</option>
+                                <option>hhh</option>
+                            </datalist>
+
+                        </div>
+
+
+
+                        <div class="col-sm-6">
+                            <label for="course"><span style="font-weight: 500;">Select Course:</span> </label>
+                            <select class="form-select" id="course" name="course" required>
+                                <option>Angular</option>
+                                <option>React</option>
+                                <option>node.js</option>
+                                <option>PHP</option>
+                            </select>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div>
+                        <label for="address"><span style="font-weight: 500;">Address:</span></label>
+                        <textarea id="address" class="form-control" style="height: 20px;" required></textarea>
+
+                    </div>
+
+                    <div class="row mt-4">
+                        <button type="submit" class="btn btn-dark mt-3 mb-3">Submit</button>
+                    </div>
+                </form>
+                <div class="row">
+                    <div class="container-fluid">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3948.011831418288!2d77.23173157477176!3d8.301620391733486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b0455c97f9a9b3b%3A0xb6a950fdb307a0c4!2sAteam%20Soft%20Solutions%20-%20Software%20Development%20Training%20Marthandam!5e0!3m2!1sen!2sin!4v1719380724579!5m2!1sen!2sin"
+                            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+        </div>
+    </div>
+    <!--------------------------------------------------------------------------------------------------------------------------------------->
+
+
+    <!---------------------------------------------------------------------------------footer---------------------------------------------------------------------->
+    <!--------------------address------------------------>
+    <footer class="container-fluid border border-dark" style="background: linear-gradient(to right,  #fffc00,#ffffff);">
+        <div class="row">
+            <div class="col-sm-4 pt-4">
+                <div class="container">
+                    <h1 class="display 4 " style="text-align: center;"> AUSTRALIA </h1>
+                    <P style="text-align: center;"><i class="fa-solid fa-location-dot fa-bounce"
+                            style="color: #000000;"> &nbsp;&nbsp;</i>PO Box 1355,<br> Mudgeeraba,
+                        Queensland,<br> 4213,<br> Australia</P>
+                    <div style="text-align: center;"><i class="fa-solid fa-envelope fa-fade"
+                            style="color: #000000;"></i>&nbsp;&nbsp;sales@ateamsoftsolutions.com</div>
+                </div>
+            </div>
+            <div class="col-sm-4 pt-4">
+                <div class="container">
+                    <h1 class="display 4" style="text-align: center;"> INDIA </h1>
+                    <P style="text-align: center;"><i class="fa-solid fa-location-dot fa-bounce"
+                            style="color: #000000;"></i>&nbsp;&nbsp;4th Floor,<br> Amstor Building, Technopark
+                        Campus,<br>
+                        Trivandrum, Kerala,<br> India</P>
+                    <div style="text-align: center;"><i class="fa-solid fa-envelope fa-fade"
+                            style="color: #000000;"></i>&nbsp;&nbsp;sales@ateamsoftsolutions.com</div>
+                </div>
+            </div>
+            <div class="col-sm-4 pt-4">
+                <div class="container">
+                    <h1 class="display 4" style="text-align: center;"> USA </h1>
+                    <P style="text-align: center;"><i class="fa-solid fa-location-dot fa-bounce"
+                            style="color: #000000;"></i>&nbsp;&nbsp;1309 Coffeen Avenue STE 1200
+                        Sheridan,<br> Wyoming 82801,<br> USA</P>
+                    <div style="text-align: center;"><i class="fa-solid fa-envelope fa-fade"
+                            style="color: #000000;"></i>&nbsp;&nbsp;sales@ateamsoftsolutions.com
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!----------------bottom--------------------------->
+        <div class="row-sm-1 d-flex justify-content-center mt-5">
+            <a href="" style="text-decoration: none;"><i class="fa-brands fa-instagram fa-beat-fade"
+                    style="color: #000000;"></i>&nbsp;Instagram</a>&nbsp;&nbsp;
+            <a href="" style="text-decoration: none;"><i class="fa-brands fa-facebook fa-beat-fade"
+                    style="color: #000000;"></i>&nbsp; Facebook</a>&nbsp;&nbsp;
+            <a href="" style="text-decoration: none;"><i class="fa-brands fa-whatsapp fa-beat-fade"
+                    style="color: #000000;"></i>&nbsp; Whatsapp</a>&nbsp;&nbsp;
+            <a href="" style="text-decoration: none;"><i class="fa-brands fa-linkedin fa-beat-fade"
+                    style="color: #000000;"></i>&nbsp; Linked-in</a>&nbsp;&nbsp;
+        </div>
+    </footer>
+
+
+
+</body>
+
+</html>
