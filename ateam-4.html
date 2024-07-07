@@ -32,6 +32,12 @@
 
             transform: scale(1.02);
         }
+
+        @media only screen and (max-width: 1000px) {
+            #search {
+                display: none;
+            }
+        }
     </style>
 </head>
 
@@ -40,51 +46,44 @@
 <body style="background-image: url(./assets/img/yellow-2.jpg);background-size: contain;">
     <!--------------------------------------------------------------------top-nav------------------------------------------------------------------------------------------------------------>
     <header>
-        <div class="row-sm-1 ">
+        <div class="row-sm ">
 
             <div class="container-fluid d-flex border border-dark p-2 " style="background-color: #fffb01;">
-                <nav class="navbar navbar-expand-sm ">
 
-                    <ul class="navbar-nav">
+                <div class="col-sm-2">
+                    <img src="./assets/img/ateam.jpeg" class=" rounded ms-2 me-5   " alt=""
+                        style="height: 60px; width:60px; border: 1px solid black;">
 
-                        <li class="nav-item">
+                </div>
 
+                <div class="col-sm-8">
 
-                            <img src="./assets/img/ateam.jpeg" class=" rounded ms-2 me-5   " alt=""
-                                style="height: 60px; width:60px; border: 1px solid black;">
+                    <h1 class="text-dark mt-1 justify-content-center"
+                        style="font-family:Verdana, Geneva, Tahoma, sans-serif; ">
+                        <b id="heading">ATEAM SOFT SOLUTIONS INTERNSHIP
+                        </b>
+                    </h1>
 
+                </div>
 
-                        </li>
+                <div class="col-sm-2 mt-2">
 
-                        <li class="nav-item ms-5">
+                    <div class="input-group " id="search">
 
-
-                            <h1 class="text-dark mt-1" style="font-family:Verdana, Geneva, Tahoma, sans-serif; ">
-                                <b id="heading" class="px-5 mx-5 ">ATEAM&nbsp;SOFT&nbsp;SOLUTIONS&nbsp;INTERNSHIP
-                                </b>
-                            </h1>
-
-
-                        </li>
-
-
-                        <li class="nav-item ">
-
-                            <div class="input-group mt-2 ms-1">
-                                <input type="text" class="form-control custom-input ms-5" style="border-radius: 50px;"
-                                    placeholder="search...">
-                                <button class="btn custom-btn rounded-circle bg-warning" type="submit">
-                                    <i class="fa-solid fa-magnifying-glass" style="color: #030303;"></i>
-                                </button>
-                            </div>
+                        <input type="text" class="form-control rounded-pill" placeholder="search...">
+                        <div class="input-group-append">
+                            <button class="btn btn-warning rounded-circle" type="submit">
+                                <i class="fa-solid fa-magnifying-glass" style="color: #030303;"></i>
+                            </button>
 
 
-                        </li>
-
-                    </ul>
+                        </div>
 
 
-                </nav>
+                    </div>
+
+                </div>
+
 
             </div>
 
@@ -96,32 +95,32 @@
     <div class="row d-flex">
         <div class="col-sm-2 ">
             <div class="container" style="height:100%;">
-                <nav class="navbar navbar-expand-sm ">
+                <nav class="navbar navbar-expand-md ">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#collapsibleNavbar"><span class="navbar-toggler-icon"></span></button>
                     <div class="collapse navbar-collapse" id="collapsibleNavbar">
                         <ul class="navbar-nav flex-column">
-                            <li class="nav-item py-2" style="background-color: #eaea1e;width: 236px;">
+                            <li class="nav-item py-2" style="background-color: #eaea1e;">
                                 <a class="text-dark" style="text-decoration: none;" href="./index.html">
                                     <h4>HOME</h4>
                                 </a>
                             </li>
-                            <li class="nav-item py-2" style="background-color: #ffff00;width: 236px;">
+                            <li class="nav-item py-2" style="background-color: #ffff00;">
                                 <a class="text-dark" style="text-decoration: none;" href="#">
                                     <h4>ABOUT</h4>
                                 </a>
                             </li>
-                            <li class="nav-item py-2" style="background-color:  #eaea1e;width: 236px;">
+                            <li class="nav-item py-2" style="background-color:  #eaea1e;">
                                 <a class="text-dark" style="text-decoration: none;" href="./a-team-2.html">
                                     <h4>INTERNSHIP</h4>
                                 </a>
                             </li>
-                            <li class="nav-item py-2" style="background-color: #eaea1e;width: 236px;">
+                            <li class="nav-item py-2" style="background-color: #eaea1e;">
                                 <a class="text-dark" style="text-decoration: none;" href="./A-TEAM-3.HTML">
                                     <h4>COURSES</h4>
                                 </a>
                             </li>
-                            <li class="nav-item py-2" style="background-color:  #eaea1e;width: 236px;">
+                            <li class="nav-item py-2" style="background-color:  #eaea1e;">
                                 <a class="text-dark" style="text-decoration: none;" href="./Ateam-5-2.html">
                                     <h4>CONTACT US</h4>
                                 </a>
@@ -143,7 +142,8 @@
                     </div>
                     <div class="container-fluid d-flex ">
                         <div class="col-sm-4">
-                            <img src="./assets/img/abhinanth.png" alt="" class="img-fluid" style=" border-radius: 50px;" >
+                            <img src="./assets/img/abhinanth.png" alt="" class="img-fluid" style=" border-radius: 50px;"
+                                id="story">
                         </div>
                         <div class="col-sm-8 m-2">
                             <h1 class="display-4">Abhinand V Nair</h1>
@@ -175,13 +175,15 @@
                                 Solutions.</p>
                         </div>
                         <div class="col-sm-4">
-                            <img src="./assets/img/akhilsir.jpg" alt="" class="img-fluid" style=" border-radius: 50px;">
+                            <img src="./assets/img/akhilsir.jpg" alt="" class="img-fluid" style=" border-radius: 50px;"
+                                id="story">
                         </div>
                     </div>
                     <hr>
                     <div class="container-fluid d-flex ">
                         <div class="col-sm-4">
-                            <img src="./assets/img/aaiyshamam.jpeg" alt="" class="img-fluid" style=" border-radius: 50px;">
+                            <img src="./assets/img/aaiyshamam.jpeg" alt="" class="img-fluid"
+                                style=" border-radius: 50px;" id="story">
                         </div>
                         <div class="col-sm-8 m-2">
                             <h1 class="display-4">Aayisha</h1>
@@ -202,17 +204,18 @@
                         <div class="col-sm-8 m-2">
                             <h1 class="display-4">Anto sir</h1>
                             <p><b>The Trainer </b>at Ateam Soft Solutions is responsible for developing and delivering
-                                    comprehensive training programs to enhance the skills and knowledge of employees.
-                                    This role involves designing curriculum, conducting training sessions, and
-                                    evaluating the effectiveness of training initiatives to ensure they meet the
-                                    company's goals and industry standards. The Trainer collaborates with various
-                                    departments to identify training needs, stay updated with the latest industry
-                                    trends, and implement best practices. By fostering a culture of continuous learning
-                                    and development, the Trainer helps ensure that the team remains proficient,
-                                    competitive, and capable of delivering high-quality software solutions.
+                                comprehensive training programs to enhance the skills and knowledge of employees.
+                                This role involves designing curriculum, conducting training sessions, and
+                                evaluating the effectiveness of training initiatives to ensure they meet the
+                                company's goals and industry standards. The Trainer collaborates with various
+                                departments to identify training needs, stay updated with the latest industry
+                                trends, and implement best practices. By fostering a culture of continuous learning
+                                and development, the Trainer helps ensure that the team remains proficient,
+                                competitive, and capable of delivering high-quality software solutions.
                         </div>
                         <div class="col-sm-4">
-                            <img src="./assets/img/antosir.png" alt="" class="img-fluid" style="border-radius: 50px;">
+                            <img src="./assets/img/antosir.png" alt="" class="img-fluid" style="border-radius: 50px;"
+                                id="story">
                         </div>
                     </div>
                     <hr>
@@ -224,59 +227,59 @@
                             <h1 class="display-4"><b> ACHIEVEMENTS</b></h1>
                         </div>
                     </DIV>
-                    <div class="row">
+                    <div class="row mt-4">
                         <div class="col-sm-4">
-                            <div class="cards p-5">
+                            <div class="cards ">
                                 <div class="card-body">
-                                    <img src="./assets/img/certificate-1.png" id="story"
-                                        style="height: 300px; width: 300px;" alt="" class="rounded shadow-lg">
+                                    <img src="./assets/img/certificate-1.png" id="story" alt=""
+                                        class="rounded shadow-lg" style="width:90%;height: 90%;">
                                 </div>
 
                             </div>
                         </div>
                         <div class="col-sm-4">
-                            <div class="cards p-5">
+                            <div class="cards">
                                 <div class="card-body">
-                                    <img src="./assets/img/certificate-2.png" id="story"
-                                        style="height: 300px; width: 300px;" alt="" class="rounded shadow-lg">
+                                    <img src="./assets/img/certificate-2.png" id="story" alt=""
+                                        class="rounded shadow-lg" style="width:90%;height: 90%;">
                                 </div>
                             </div>
                         </div>
 
 
                         <div class="col-sm-4">
-                            <div class="cards p-5">
+                            <div class="cards">
                                 <div class="card-body">
-                                    <img src="./assets/img/certificate-3.png" id="story"
-                                        style="height: 300px; width: 300px;" alt="" class="rounded shadow-lg">
+                                    <img src="./assets/img/certificate-3.png" id="story" alt=""
+                                        class="rounded shadow-lg" style="width:90%;height: 90%;">
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="row">
+                    <div class="row mt-4">
                         <div class="col-sm-4 ">
-                            <div class="cards  p-5 ">
+                            <div class="cards ">
                                 <div class="card-body">
-                                    <img src="./assets/img/certificate 4.png" id="story"
-                                        style="height: 300px; width: 300px;" alt="" class="rounded shadow-lg">
+                                    <img src="./assets/img/certificate 4.png" id="story" alt=""
+                                        class="rounded shadow-lg" style="width:90%;height: 90%;">
                                 </div>
                             </div>
                         </div>
 
                         <div class="col-sm-4 ">
-                            <div class="cards  p-5 ">
+                            <div class="cards ">
                                 <div class="card-body">
-                                    <img src="./assets/img/certificate-6.png" id="story"
-                                        style="height: 300px; width: 300px;" alt="" class="rounded shadow-lg">
+                                    <img src="./assets/img/certificate-6.png" id="story" alt=""
+                                        class="rounded shadow-lg" style="width:90%;height: 90%;">
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-4 ">
-                            <div class="cards  p-5 ">
+                        <div class="col-sm-4  ">
+                            <div class="cards  ">
                                 <div class="card-body">
-                                    <img src="./assets/img/certificate-x.png" id="story"
-                                        style="height: 300px; width: 300px;" alt="" class="rounded shadow-lg">
+                                    <img src="./assets/img/certificate-x.png" id="story" alt=""
+                                        class="rounded shadow-lg" style="width:90%;height: 90%;">
                                 </div>
                             </div>
                         </div>
@@ -284,162 +287,147 @@
 
 
                     <!--------------------------------------------------------------------------------------------------------------------------------------->
-                    <div class="row border border-dark bg-warning" style="text-align: center;">
+                    <div class="row border border-dark bg-warning mt-5" style="text-align: center;">
                         <h1 class="display-4"><b> OUR TRUSTED PARTNERS </b></h1>
                     </div>
                     <div class="row">
-                        <div class="col-sm-3">
-                            <div class="cards p-5 ">
+                        <div class="col-sm-4">
+                            <div class="cards ">
                                 <div class="card-body ">
-                                    <img src="./assets/img/company-1.png" id="story" style="height: 200px; width: 230px;"
-                                        alt="" class="rounded shadow-lg">
+                                    <img src="./assets/img/company-1.png" id="story" alt="" class="rounded-pill shadow-lg mb-5 mt-5"style="height:70%;width:95%">
                                 </div>
 
                             </div>
                         </div>
-                        <div class="col-sm-3">
-                            <div class="cards p-5">
+                        <div class="col-sm-4">
+                            <div class="cards  ">
                                 <div class="card-body">
-                                    <img src="./assets/img/company-2.png" id="story" style="height: 200px; width: 230px;"
-                                        alt="" class="rounded shadow-lg">
+                                    <img src="./assets/img/company-2.png" id="story" alt="" class="rounded-pill shadow-lg mb-5 mt-5"style="height:70%;width:95%">
                                 </div>
                             </div>
                         </div>
 
 
-                        <div class="col-sm-3">
-                            <div class="cards p-5">
+                        <div class="col-sm-4">
+                            <div class="cards  ">
                                 <div class="card-body">
-                                    <img src="./assets/img/company-3.png" id="story" style="height: 200px; width: 230px;"
-                                        alt="" class="rounded  shadow-lg">
+                                    <img src="./assets/img/company-3.png" id="story" alt="" class="rounded-pill  shadow-l mb-5 mt-5"style="height:70%;width:95%">
                                 </div>
                             </div>
                         </div>
 
-                        <div class="col-sm-3">
-                            <div class="cards p-5">
-                                <div class="card-body">
-                                    <img src="./assets/img/company-4.png" id="story" style="height: 200px; width: 230px;"
-                                        alt="" class="rounded shadow-lg">
-                                </div>
-                            </div>
-                        </div>
+
                     </div>
 
                     <div class="row">
-                        <div class="col-sm-3">
-                            <div class="cards p-5">
+                        <div class="col-sm-4">
+                            <div class="cards  ">
                                 <div class="card-body">
-                                    <img src="./assets/img/company-5.png" id="story" style="height: 200px; width: 230px;"
-                                        alt="" class="rounded shadow-lg">
+                                    <img src="./assets/img/company-5.png" id="story" alt="" class="rounded-pill shadow-lg mb-5"style="height:70%;width:95%">
                                 </div>
 
                             </div>
                         </div>
-                        <div class="col-sm-3">
-                            <div class="cards p-5">
+                        <div class="col-sm-4">
+                            <div class="cards  ">
                                 <div class="card-body">
-                                    <img src="./assets/img/company-6.png" id="story" style="height: 200px; width: 230px;"
-                                        alt="" class="rounded shadow-lg">
+                                    <img src="./assets/img/company-6.png" id="story" alt="" class="rounded-pill shadow-lg mb-5"style="height:70%;width:95%">
                                 </div>
                             </div>
                         </div>
 
 
-                        <div class="col-sm-3">
-                            <div class="cards p-5">
+                        <div class="col-sm-4">
+                            <div class="cards  ">
                                 <div class="card-body">
-                                    <img src="./assets/img/company-1.png" id="story" style="height: 200px; width: 230px;"
-                                        alt="" class="rounded shadow-lg">
+                                    <img src="./assets/img/company-1.png" id="story" alt="" class="rounded-pill shadow-lg mb-5"style="height:70%;width:95%">
                                 </div>
                             </div>
                         </div>
 
-                        <div class="col-sm-3">
-                            <div class="cards p-5">
-                                <div class="card-body">
-                                    <img src="./assets/img/company-7.png" id="story" style="height: 200px; width: 230px;"
-                                        alt="" class="rounded shadow-lg">
-                                </div>
-                            </div>
-                        </div>
+
                     </div>
                     <div class="row">
-                        <div class="col-sm-3">
-                            <div class="cards p-5">
+                        <div class="col-sm-4">
+                            <div class="cards  ">
                                 <div class="card-body">
-                                    <img src="./assets/img/company-8.png" id="story" style="height: 200px; width: 230px;"
-                                        alt="" class="rounded shadow-lg">
+                                    <img src="./assets/img/company-8.png" id="story" alt="" class="rounded-pill shadow-lg mb-5"style="height:70%;width:95%">
                                 </div>
 
                             </div>
                         </div>
-                        <div class="col-sm-3">
-                            <div class="cards p-5">
+                        <div class="col-sm-4">
+                            <div class="cards  ">
                                 <div class="card-body">
-                                    <img src="./assets/img/company-9.png" id="story" style="height: 200px; width: 230px;"
-                                        alt="" class="rounded shadow-lg">
+                                    <img src="./assets/img/company-9.png" id="story" alt="" class="rounded-pill shadow-lg mb-5"style="height:70%;width:95%">
                                 </div>
                             </div>
                         </div>
 
 
-                        <div class="col-sm-3">
-                            <div class="cards p-5">
+                        <div class="col-sm-4">
+                            <div class="cards  ">
                                 <div class="card-body">
-                                    <img src="./assets/img/company-10.png" id="story" style="height: 200px; width: 230px;"
-                                        alt="" class="rounded shadow-lg">
+                                    <img src="./assets/img/company-10.png" id="story" alt="" class="rounded-pill shadow-lg mb-5"style="height:70%;width:95%">
                                 </div>
                             </div>
                         </div>
 
-                        <div class="col-sm-3">
-                            <div class="cards p-5">
-                                <div class="card-body">
-                                    <img src="./assets/img/company-11.png" id="story" style="height: 200px; width: 230px;"
-                                        alt="" class="rounded shadow-lg">
-                                </div>
-                            </div>
-                        </div>
+
                     </div>
 
                     <div class="row">
-                        <div class="col-sm-3">
-                            <div class="cards p-5">
+                        <div class="col-sm-4">
+                            <div class="cards  ">
                                 <div class="card-body">
-                                    <img src="./assets/img/company-12.png" id="story" style="height: 200px; width: 230px;"
-                                        alt="" class="rounded shadow-lg">
+                                    <img src="./assets/img/company-12.png" id="story" alt="" class="rounded-pill shadow-lg mb-5"style="height:70%;width:95%">
                                 </div>
 
                             </div>
                         </div>
-                        <div class="col-sm-3">
-                            <div class="cards p-5">
+                        <div class="col-sm-4">
+                            <div class="cards  ">
                                 <div class="card-body">
-                                    <img src="./assets/img/company-13.png" id="story" style="height: 200px; width: 230px;"
-                                        alt="" class="rounded shadow-lg">
+                                    <img src="./assets/img/company-13.png" id="story" alt="" class="rounded-pill shadow-lg mb-5"style="height:70%;width:95%">
                                 </div>
                             </div>
                         </div>
 
 
-                        <div class="col-sm-3">
-                            <div class="cards p-5">
+                        <div class="col-sm-4">
+                            <div class="cards  ">
                                 <div class="card-body">
-                                    <img src="./assets/img/company-14.png" id="story" style="height: 200px; width: 230px;"
-                                        alt="" class="rounded shadow-lg">
+                                    <img src="./assets/img/company-14.png" id="story" alt="" class="rounded-pill shadow-lg mb-5"style="height:70%;width:95%">
                                 </div>
                             </div>
                         </div>
 
-                        <div class="col-sm-3">
-                            <div class="cards p-5">
+
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="cards  ">
                                 <div class="card-body">
-                                    <img src="./assets/img/company-15.png" id="story" style="height: 200px; width: 230px;"
-                                        alt="" class="rounded shadow-lg">
+                                    <img src="./assets/img/company-15.png" id="story" alt="" class="rounded-pill shadow-lg mb-5"style="height:70%;width:95%">
                                 </div>
                             </div>
                         </div>
+                        <div class="col-sm-4">
+                            <div class="cards  ">
+                                <div class="card-body">
+                                    <img src="./assets/img/company-11.png" id="story" alt="" class="rounded-pill shadow-lg mb-5"style="height:70%;width:95%">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="cards  ">
+                                <div class="card-body">
+                                    <img src="./assets/img/company-7.png" id="story" alt="" class="rounded-pill shadow-lg mb-5"style="height:70%;width:95%">
+                                </div>
+                            </div>
+                        </div>
+                       
+
                     </div>
                 </div>
             </div>

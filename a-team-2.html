@@ -22,6 +22,11 @@
             display: none;
 
         }
+        @media only screen and (max-width: 1000px) {
+        #search {
+          display:none;
+        }
+      }
     </style>
 </head>
 
@@ -30,51 +35,44 @@
 <body style="background-image: url(./assets/img/yellow-2.jpg);background-size: contain;">
     <!--------------------------------------------------------------------top-nav------------------------------------------------------------------------------------------------------------>
     <header>
-        <div class="row-sm-1 ">
+        <div class="row-sm ">
 
             <div class="container-fluid d-flex border border-dark p-2 " style="background-color: #fffb01;">
-                <nav class="navbar navbar-expand-sm ">
 
-                    <ul class="navbar-nav">
+                <div class="col-sm-2">
+                    <img src="./assets/img/ateam.jpeg" class=" rounded ms-2 me-5   " alt=""
+                        style="height: 60px; width:60px; border: 1px solid black;">
 
-                        <li class="nav-item">
+                </div>
 
+                <div class="col-sm-8">
 
-                            <img src="./assets/img/ateam.jpeg" class=" rounded ms-2 me-5   " alt=""
-                                style="height: 60px; width:60px; border: 1px solid black;">
+                    <h1 class="text-dark mt-1 justify-content-center"
+                        style="font-family:Verdana, Geneva, Tahoma, sans-serif; ">
+                        <b id="heading">ATEAM SOFT SOLUTIONS INTERNSHIP
+                        </b>
+                    </h1>
 
+                </div>
 
-                        </li>
+                <div class="col-sm-2 mt-2">
 
-                        <li class="nav-item ms-5">
+                    <div class="input-group " id="search">
 
-
-                            <h1 class="text-dark mt-1" style="font-family:Verdana, Geneva, Tahoma, sans-serif; ">
-                                <b id="heading" class="px-5 mx-5 ">ATEAM&nbsp;SOFT&nbsp;SOLUTIONS&nbsp;INTERNSHIP
-                                </b>
-                            </h1>
-
-
-                        </li>
-
-
-                        <li class="nav-item ">
-
-                            <div class="input-group mt-2 ms-1">
-                                <input type="text" class="form-control custom-input ms-5" style="border-radius: 50px;"
-                                    placeholder="search...">
-                                <button class="btn custom-btn rounded-circle bg-warning" type="submit">
+                        <input type="text" class="form-control rounded-pill" placeholder="search...">
+                        <div class="input-group-append"> 
+                            <button class="btn btn-warning rounded-circle" type="submit">
                                     <i class="fa-solid fa-magnifying-glass" style="color: #030303;"></i>
                                 </button>
-                            </div>
+                        
+
+                        </div>
 
 
-                        </li>
+                    </div>
 
-                    </ul>
+                </div>
 
-
-                </nav>
 
             </div>
 
@@ -86,32 +84,32 @@
     <div class="row d-flex">
         <div class="col-sm-2 ">
             <div class="container" style="height:100%;">
-                <nav class="navbar navbar-expand-sm ">
+                <nav class="navbar navbar-expand-md ">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#collapsibleNavbar"><span class="navbar-toggler-icon"></span></button>
                     <div class="collapse navbar-collapse" id="collapsibleNavbar">
                         <ul class="navbar-nav flex-column">
-                            <li class="nav-item py-2" style="background-color: #eaea1e;width: 246px;">
+                            <li class="nav-item py-2" style="background-color: #eaea1e;">
                                 <a class="text-dark" style="text-decoration: none;" href="./index.html">
                                     <h4>HOME</h4>
                                 </a>
                             </li>
-                            <li class="nav-item py-2" style="background-color:#eaea1e;width: 246px;">
+                            <li class="nav-item py-2" style="background-color:#eaea1e;">
                                 <a class="text-dark" style="text-decoration: none;" href="./ateam-4.html">
                                     <h4>ABOUT</h4>
                                 </a>
                             </li>
-                            <li class="nav-item py-2" style="background-color: #ffff00;width: 246px;">
+                            <li class="nav-item py-2" style="background-color: #ffff00;">
                                 <a class="text-dark" style="text-decoration: none;" href="#">
                                     <h4>INTERNSHIP</h4>
                                 </a>
                             </li>
-                            <li class="nav-item py-2" style="background-color: #eaea1e;width: 246px;">
+                            <li class="nav-item py-2" style="background-color: #eaea1e;">
                                 <a class="text-dark" style="text-decoration: none;" href="./A-TEAM-3.HTML">
                                     <h4>COURSES</h4>
                                 </a>
                             </li>
-                            <li class="nav-item py-2" style="background-color:  #eaea1e;width: 246px;">
+                            <li class="nav-item py-2" style="background-color:  #eaea1e;">
                                 <a class="text-dark" style="text-decoration: none;" href="./Ateam-5-2.html">
                                     <h4>CONTACT US</h4>
                                 </a>
